@@ -252,6 +252,43 @@
                     ]
                 }
             ]
+        },
+        {
+            "id":"com.zhihu.android",
+            "name":"知乎",
+            "groups":[
+                {
+                    "name":"分段广告-首页内容广告",
+                    "key":0,
+                    "desc":"自动选择\"不感兴趣\"",
+                    "enable":false,
+                    "rules":[
+                        {
+                            "name":"点击选项卡右下角\"x\"",
+                            "key":0,
+                            "activityIds":"com.zhihu.android.app.ui.activity.MainActivity",
+                            "quickFind":true,
+                            "matches":[
+                                "@ImageView < ViewGroup - ViewGroup >3 [id=\"com.zhihu.android:id/card_power_text_view\"][text=\"立即下载\"]"
+                            ],
+                            "snapshotUrls":["https://i.gkd.li/import/14293036"]
+                        },
+                        {
+                            "name":"点击\"不感兴趣\"",
+                            "key":1,
+                            "preKeys":[
+                                0
+                            ],
+                            "activityIds":"com.zhihu.android.app.ui.activity.MainActivity",
+                            "quickFind":true,
+                            "matches":[
+                                "[id=\"com.zhihu.android:id/scene_container\"] >7 [id=\"com.zhihu.android:id/tv_content\"][text=\"内容不感兴趣\"]"
+                            ],
+                            "snapshotUrls":["https://i.gkd.li/import/14296830"]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
