@@ -7,32 +7,7 @@
     "updateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
     "checkUpdateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.version.json",
     "globalGroups": [],
-    "categories": [
-        {
-            "key":1,
-            "name":"开屏广告"
-        },
-        {
-            "key":2,
-            "name":"局部广告"
-        },
-        {
-            "key":3,
-            "name":"分段广告"
-        },
-        {
-            "key":4,
-            "name":"功能"
-        },
-        {
-            "key":5,
-            "name":"全屏广告"
-        },
-        {
-            "key":6,
-            "name":"其他"
-        }
-    ],
+    "categories": [],
     "apps": [
         {
             "id": "com.tencent.mm",
