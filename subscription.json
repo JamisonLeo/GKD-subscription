@@ -3,6 +3,9 @@
     "name": "Jamison Leo的GKD订阅",
     "version": 1,
     "author": "Jamison Leo",
+    "supportUri":"https://github.com/JamisonLeo/GKD-subscription",
+    "updateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
+    "checkUpdateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.version.json",
     "globalGroups": [],
     "categories": [],
     "apps": [
