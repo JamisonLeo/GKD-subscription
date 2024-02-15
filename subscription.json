@@ -1,13 +1,30 @@
 {
     "id": 1025,
     "name": "Jamison Leo的GKD订阅",
-    "version": 1,
+    "version": 2,
     "author": "Jamison Leo",
     "supportUri":"https://github.com/JamisonLeo/GKD-subscription",
     "updateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
     "checkUpdateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.version.json",
     "globalGroups": [],
-    "categories": [],
+    "categories": [
+        {
+            "key":1,
+            "name":"开屏广告"
+        },
+        {
+            "key":2,
+            "name":"局部广告"
+        },
+        {
+            "key":3,
+            "name":"分段广告"
+        },
+        {
+            "key":4,
+            "name":"功能"
+        }
+    ],
     "apps": [
         {
             "id": "com.tencent.mm",
@@ -15,7 +32,7 @@
             "groups": [
                 {
                     "name": "全屏广告-微信小程序-开屏广告",
-                    "key": 0,
+                    "key": 1,
                     "enable": false,
                     "quickFind": true,
                     "matchTime": 10000,
@@ -50,7 +67,7 @@
             "groups": [
                 {
                     "name": "聊天-查看原图",
-                    "key": 0,
+                    "key": 4,
                     "enable": false,
                     "snapshotUrls": [
                         "https://i.gkd.li/import/14227999"
@@ -74,7 +91,7 @@
             "groups": [
                 {
                     "name": "分段广告-\"下载页\"广告卡片",
-                    "key": 0,
+                    "key": 3,
                     "desc": "需选二次弹窗关闭原因",
                     "enable": false,
                     "quickFind": true,
@@ -248,6 +265,39 @@
                                 "com.xunlei.downloadprovider.download.taskdetails.newui.DownloadDetailsActivity",
                                 "com.xunlei.downloadprovider.feedback.view"
                             ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"com.zhihu.android",
+            "name":"知乎",
+            "groups":[
+                {
+                    "name":"分段广告-首页内容广告",
+                    "key":1,
+                    "quickFind":true,
+                    "desc":"自动点击\"不感兴趣\"",
+                    "enable":false,
+                    "activityIds":"com.zhihu.android.app.ui.activity.MainActivity",
+                    "rules":[
+                        {
+                            "name":"点击选项卡右下角\"x\"",
+                            "key":1,
+                            "matches":[
+                                "@ImageView < ViewGroup - ViewGroup >3 [id=\"com.zhihu.android:id/card_power_text_view\"][text=\"立即下载\"]"
+                            ],
+                            "snapshotUrls":["https://i.gkd.li/import/14293036"]
+                        },
+                        {
+                            "name":"点击\"不感兴趣\"",
+                            "key":2,
+                            "preKeys":[1],
+                            "matches":[
+                                "[id=\"com.zhihu.android:id/scene_container\"] >7 [id=\"com.zhihu.android:id/tv_content\"][text=\"不感兴趣\"]"
+                            ],
+                            "snapshotUrls":["https://i.gkd.li/import/14295292"]
                         }
                     ]
                 }
