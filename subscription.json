@@ -1,13 +1,38 @@
 {
     "id": 1025,
     "name": "Jamison Leo的GKD订阅",
-    "version": 2,
+    "version": 3,
     "author": "Jamison Leo",
     "supportUri":"https://github.com/JamisonLeo/GKD-subscription",
     "updateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
     "checkUpdateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.version.json",
     "globalGroups": [],
-    "categories": [],
+    "categories": [
+        {
+            "key":1,
+            "name":"开屏广告"
+        },
+        {
+            "key":2,
+            "name":"局部广告"
+        },
+        {
+            "key":3,
+            "name":"分段广告"
+        },
+        {
+            "key":4,
+            "name":"功能"
+        },
+        {
+            "key":5,
+            "name":"全屏广告"
+        },
+        {
+            "key":6,
+            "name":"其他"
+        }
+    ],
     "apps": [
         {
             "id": "com.tencent.mm",
@@ -287,6 +312,18 @@
                             "snapshotUrls":["https://i.gkd.li/import/14296830"]
                         }
                     ]
+                },
+                {
+                    "name":"功能-回答自动展开",
+                    "key":1,
+                    "desc":"问题的回答页，长文本自动展开",
+                    "enable":false,
+                    "rules":{
+                        "activityIds":"com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity",
+                        "quickFind":true,
+                        "matches":"[id=\"com.zhihu.android:id/layout_expand\"] > [text=\"展开\"] + [id=\"com.zhihu.android:id/iv_expand\"]",
+                        "snapshotUrls":["https://i.gkd.li/import/14298731"]
+                    }
                 }
             ]
         }
