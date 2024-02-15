@@ -7,11 +7,11 @@
     "categories": [],
     "apps": [
         {
-            "id": "com.tencent.aa",
+            "id": "com.tencent.mm",
             "name": "微信",
             "groups": [
                 {
-                    "name": "全屏广告-微信小程序-开屏广告",
+                    "name": "全屏广-微信小程序-开屏广告",
                     "key": 0,
                     "enable": false,
                     "quickFind": true,
@@ -46,7 +46,7 @@
             "name": "企业微信",
             "groups": [
                 {
-                    "name": "聊天-查看原图",
+                    "name": "聊-查看原图",
                     "key": 0,
                     "enable": false,
                     "snapshotUrls": [
@@ -70,9 +70,9 @@
             "name": "迅雷",
             "groups": [
                 {
-                    "name": "分段广告-\"下载页\"广告卡片",
+                    "name": "分段广-\"下载页\"广告卡片",
                     "key": 0,
-                    "desc": "需选二次弹窗关闭原因",
+                    "desc": "需选次弹窗关闭原因",
                     "enable": false,
                     "quickFind": true,
                     "rules": [
@@ -127,9 +127,9 @@
                     ]
                 },
                 {
-                    "name": "分段广告-视频详情页直播推荐",
+                    "name": "分段广告-频详情页直播推荐",
                     "key": 1,
-                    "desc": "自动点击\"减少推荐\"",
+                    "desc": "自动击\"减少推荐\"",
                     "enable": false,
                     "quickFind": true,
                     "rules": [
