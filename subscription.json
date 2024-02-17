@@ -1,7 +1,7 @@
 {
     "id": 1025,
     "name": "Jamison Leo的GKD订阅",
-    "version": 4,
+    "version": 5,
     "author": "Jamison Leo",
     "supportUri":"https://github.com/JamisonLeo/GKD-subscription",
     "updateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
@@ -342,7 +342,7 @@
                     "enable":false,
                     "rules":{
                         "activityIds":"cn.wenzhuo.main.page.main.MainActivity",
-                        "matches":"[text^=\"应用名称\"] < LinearLayout - FrameLayout > FrameLayout > ImageView",
+                        "matches":"[text^=\"应用名称：\"] < LinearLayout - FrameLayout > FrameLayout > ImageView",
                         "snapshotUrls":["https://i.gkd.li/import/14317995"]
                     }
                 },
@@ -403,8 +403,34 @@
                             "name":"点击左上角x",
                             "key":1,
                             "preKeys":0,
+                            "activityIds":"tv.kyyy.video.VideoDetailsActivity",
+                            "quickFind":true,
                             "matches":"FrameLayout >14 @ImageView < ViewGroup < ViewGroup +2 ViewGroup > [text=\"广告\"]",
                             "snapshotUrls":"https://i.gkd.li/import/14318024"
+                        }
+                    ]
+                },
+                {
+                    "name":"分段广告-我的界面广告",
+                    "key":4,
+                    "enable":false,
+                    "rules":[
+                        {
+                            "name":"点击反馈",
+                            "key":0,
+                            "activityIds":"cn.wenzhuo.main.page.main.MainActivity",
+                            "quickFind":true,
+                            "matches":"[id=\"com.kkk.kyyy:id/ll_record\"] < LinearLayout < LinearLayout + FrameLayout >10 [text=\"反馈\"]",
+                            "snapshotUrls":"https://i.gkd.li/import/14318088"
+                        },
+                        {
+                            "name":"点击不敢兴趣",
+                            "key":1,
+                            "preKeys":0,
+                            "activityIds":"cn.wenzhuo.main.page.main.MainActivity",
+                            "quickFind":true,
+                            "matches":"FrameLayout >7 [text=\"不感兴趣\"]",
+                            "snapshotUrls":"https://i.gkd.li/import/14318089"
                         }
                     ]
                 }
