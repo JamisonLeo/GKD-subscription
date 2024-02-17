@@ -1,7 +1,7 @@
 {
     "id": 1025,
     "name": "Jamison Leo的GKD订阅",
-    "version": 3,
+    "version": 4,
     "author": "Jamison Leo",
     "supportUri":"https://github.com/JamisonLeo/GKD-subscription",
     "updateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
@@ -30,6 +30,10 @@
         },
         {
             "key":6,
+            "name":"弹窗广告"
+        },
+        {
+            "key":7,
             "name":"其他"
         }
     ],
@@ -324,6 +328,85 @@
                         "matches":"[id=\"com.zhihu.android:id/layout_expand\"] > [text=\"展开\"] + [id=\"com.zhihu.android:id/iv_expand\"]",
                         "snapshotUrls":["https://i.gkd.li/import/14298731"]
                     }
+                }
+            ]
+        },
+        {
+            "id":"com.kkk.kyyy",
+            "name":"快云影音",
+            "groups":[
+                {
+                    "name":"弹窗广告-下载/打开第三方",
+                    "key":0,
+                    "desc":"应用图标和详情按钮",
+                    "enable":false,
+                    "rules":{
+                        "activityIds":"cn.wenzhuo.main.page.main.MainActivity",
+                        "matches":"[text^=\"应用名称\"] < LinearLayout - FrameLayout > FrameLayout > ImageView",
+                        "snapshotUrls":["https://i.gkd.li/import/14317995"]
+                    }
+                },
+                {
+                    "name":"局部广告-播放页倒计时广告",
+                    "key":1,
+                    "desc":"可跳过时点击跳过",
+                    "enable":false,
+                    "rules":{
+                        "activityIds":"tv.kyyy.video.VideoDetailsActivity",
+                        "quickFind":true,
+                        "matches":"[id=\"com.kkk.kyyy:id/close_ad\"][text$=\"s | 跳过\"]",
+                        "snapshotUrls":[
+                            "https://i.gkd.li/import/14318012",
+                            "https://i.gkd.li/import/14317990"
+                        ]
+                    }
+                },
+                {
+                    "name":"分段广告-播放页下方广告",
+                    "key":2,
+                    "enable":false,
+                    "rules":[
+                        {
+                            "name":"点击反馈",
+                            "key":0,
+                            "activityIds":"tv.kyyy.video.VideoDetailsActivity",
+                            "matches":"[text=\"相关推荐\"] - FrameLayout >10 [text=\"反馈\"]",
+                            "snapshotUrls":["https://i.gkd.li/import/14317990"]
+                        },
+                        {
+                            "name":"点击不感兴趣",
+                            "key":1,
+                            "preKeys":0,
+                            "activityIds":"tv.kyyy.video.VideoDetailsActivity",
+                            "matches":"[id=\"android:id/content\"] >3 ListView >2 [text=\"不感兴趣\"]",
+                            "snapshotUrls":"https://i.gkd.li/import/14318023"
+                        }
+                    ]
+                },
+                {
+                    "name":"分段广告-视频暂停弹出广告",
+                    "key":3,
+                    "enable":false,
+                    "rules":[
+                        {
+                            "name":"点击跳过",
+                            "key":0,
+                            "activityIds":"tv.kyyy.video.VideoDetailsActivity",
+                            "quickFind":true,
+                            "matches":[
+                                "ViewGroup >9 [text=\"扭动手机\"]",
+                                "ViewGroup >9 [text=\"跳过\"]"
+                            ],
+                            "snapshotUrls":"https://i.gkd.li/import/14318026"
+                        },
+                        {
+                            "name":"点击左上角x",
+                            "key":1,
+                            "preKeys":0,
+                            "matches":"FrameLayout >14 @ImageView < ViewGroup < ViewGroup +2 ViewGroup > [text=\"广告\"]",
+                            "snapshotUrls":"https://i.gkd.li/import/14318024"
+                        }
+                    ]
                 }
             ]
         }
