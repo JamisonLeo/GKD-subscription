@@ -1,7 +1,7 @@
 {
     "id": 1025,
     "name": "Jamison Leo的GKD订阅",
-    "version": 7,
+    "version": 8,
     "author": "Jamison Leo",
     "supportUri":"https://github.com/JamisonLeo/GKD-subscription",
     "updateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
@@ -403,8 +403,10 @@
                             "name":"点击左上角x",
                             "key":1,
                             "preKeys":0,
-                            "activityIds":"tv.kyyy.video.VideoDetailsActivity",
-                            "quickFind":true,
+                            "activityIds":[
+                                "tv.kyyy.video.VideoDetailsActivity",
+                                "cn.wenzhuo.main.page.main.MainActivity"
+                            ],
                             "matches":"FrameLayout >14 @ImageView < ViewGroup < ViewGroup +2 ViewGroup > [text=\"广告\"]",
                             "snapshotUrls":"https://i.gkd.li/import/14318024"
                         }
