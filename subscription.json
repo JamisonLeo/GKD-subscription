@@ -1,7 +1,7 @@
 {
     "id": 1025,
     "name": "Jamison Leo的GKD订阅",
-    "version": 6,
+    "version": 7,
     "author": "Jamison Leo",
     "supportUri":"https://github.com/JamisonLeo/GKD-subscription",
     "updateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
@@ -419,7 +419,6 @@
                             "name":"点击反馈",
                             "key":0,
                             "activityIds":"cn.wenzhuo.main.page.main.MainActivity",
-                            "quickFind":true,
                             "matches":"[text=\"摇一摇 或 点击图标\"] < View -2 TextView < View - View < View - View < View - View > [text=\"反馈\"]",
                             "snapshotUrls":"https://i.gkd.li/import/14318088"
                         },
