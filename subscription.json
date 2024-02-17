@@ -1,7 +1,7 @@
 {
     "id": 1025,
     "name": "Jamison Leo的GKD订阅",
-    "version": 5,
+    "version": 6,
     "author": "Jamison Leo",
     "supportUri":"https://github.com/JamisonLeo/GKD-subscription",
     "updateUrl":"https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
@@ -411,7 +411,7 @@
                     ]
                 },
                 {
-                    "name":"分段广告-我的界面广告",
+                    "name":"分段广告-\"我的\"界面广告",
                     "key":4,
                     "enable":false,
                     "rules":[
@@ -420,7 +420,7 @@
                             "key":0,
                             "activityIds":"cn.wenzhuo.main.page.main.MainActivity",
                             "quickFind":true,
-                            "matches":"[id=\"com.kkk.kyyy:id/ll_record\"] < LinearLayout < LinearLayout + FrameLayout >10 [text=\"反馈\"]",
+                            "matches":"[text=\"摇一摇 或 点击图标\"] < View -2 TextView < View - View < View - View < View - View > [text=\"反馈\"]",
                             "snapshotUrls":"https://i.gkd.li/import/14318088"
                         },
                         {
