@@ -1,7 +1,7 @@
 {
     "id": 1025,
     "name": "Jamison Leo的GKD订阅",
-    "version": 13,
+    "version": 14,
     "author": "Jamison Leo",
     "supportUri": "https://github.com/JamisonLeo/GKD-subscription",
     "updateUrl": "https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
@@ -574,23 +574,6 @@
                             "snapshotUrls": "https://i.gkd.li/import/14318089"
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "com.douban.frodo",
-            "name": "豆瓣",
-            "groups": [
-                {
-                    "name": "开屏广告",
-                    "key": 0,
-                    "actionDelay": 500,
-                    "enable": false,
-                    "rules": {
-                        "activityIds": "com.douban.frodo.activity.SplashActivity",
-                        "matches": "[id=\"com.douban.frodo:id/appbar\"] >4 ImageView",
-                        "snapshotUrls": "https://i.gkd.li/i/14326971"
-                    }
                 }
             ]
         }
