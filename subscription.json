@@ -1,7 +1,7 @@
 {
     "id": 1025,
     "name": "Jamison Leo的GKD订阅",
-    "version": 9,
+    "version": 10,
     "author": "Jamison Leo",
     "supportUri": "https://github.com/JamisonLeo/GKD-subscription",
     "updateUrl": "https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
@@ -593,7 +593,6 @@
                     "name":"开屏广告",
                     "key":0,
                     "enable":false,
-                    "actionDelay":500,
                     "rules":{
                         "activityIds":"com.douban.frodo.activity.SplashActivity",
                         "matches":"[id=\"com.douban.frodo:id/appbar\"] >4 ImageView",
