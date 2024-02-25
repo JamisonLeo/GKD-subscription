@@ -1,7 +1,7 @@
 {
     "id": 1025,
     "name": "Jamison Leo的GKD订阅",
-    "version": 10,
+    "version": 11,
     "author": "Jamison Leo",
     "supportUri": "https://github.com/JamisonLeo/GKD-subscription",
     "updateUrl": "https://raw.gitmirror.com/JamisonLeo/GKD-subscription/main/subscription.json",
@@ -368,8 +368,6 @@
                     "enable":false,
                     "quickFind":true,
                     "rules":{
-                        "name":"点击\"x\"",
-                        "key":0,
                         "activityIds":"com.xunlei.downloadprovider.web.base.CustomWebViewActivity$Trans",
                         "matches":"[text=\"活动规则\"] < View + View > [desc=\"javascript:;\"]",
                         "snapshotUrls":"https://i.gkd.li/i/14396406"
@@ -381,8 +379,6 @@
                     "enable":false,
                     "desc":"该弹窗有\"反馈\"按钮",
                     "rules":{
-                        "name":"点击右上角x按钮",
-                        "key":0,
                         "activityIds":"com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
                         "matches":"@View +4 [text=\"反馈\"]",
                         "snapshotUrls":"https://i.gkd.li/i/14396407"
@@ -394,8 +390,6 @@
                     "enable":false,
                     "desc":"该弹窗有掉落惊喜",
                     "rules":{
-                        "name":"点击左上角x按钮",
-                        "key":0,
                         "activityIds":"com.xunlei.downloadprovider.frame.MainTabActivity",
                         "metches":"@ImageView < ViewGroup < ViewGroup - View - ImageView - ViewGroup - ViewGroup < ViewGroup - ImageView < ViewGroup < ViewGroup < ViewGroup < ViewGroup - ViewGroup >2 [text$=\"秒后掉落惊喜\"]",
                         "snapshotUrls":"https://i.gkd.li/i/14396404"
@@ -408,8 +402,6 @@
                     "desc":"右上角\"关闭\"按钮",
                     "quickFind":true,
                     "rules":{
-                        "name":"点击右上角\"关闭\"按钮",
-                        "key":0,
                         "activityIds":"com.xunlei.downloadprovider.frame.MainTabActivity",
                         "matches":[
                             "[text=\"隐私协议\"]",
@@ -592,6 +584,7 @@
                 {
                     "name":"开屏广告",
                     "key":0,
+                    "actionDelay":500,
                     "enable":false,
                     "rules":{
                         "activityIds":"com.douban.frodo.activity.SplashActivity",
